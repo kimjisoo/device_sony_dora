@@ -24,3 +24,7 @@ PRODUCT_DEVICE := dora
 PRODUCT_MODEL := Xperia X Performance (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+
+# add jisoo vendor files
+$(call inherit-product, vendor/jisoo/config/common.mk)
+
