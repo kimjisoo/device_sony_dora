@@ -102,3 +102,7 @@ $(call inherit-product, vendor/sony/tone-common/tone-partial.mk)
 
 # include optional vendor configuration
 $(call inherit-product-if-exists, vendor/qcom/proprietary/common/build/qcom-packages.mk)
+
+# Default to LTE/WCDMA for now
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.telephony.default_network=12
